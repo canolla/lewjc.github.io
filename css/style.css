@@ -593,6 +593,10 @@ video {
         width: 85vw;
     }
 
+    .para-4 {
+        margin-left: 0;
+    }
+
     .project-section {
         width: 85vw;
     }
@@ -603,6 +607,7 @@ video {
 
     .nextdoor {
         width: 85vw;
+        flex-direction: column;
     }
 
     video {
@@ -610,6 +615,14 @@ video {
     }
 
     embed {
+        width: 85vw;
+    }
+
+    .lotties {
+        width: 85vw;
+    }
+
+    .pagination {
         width: 85vw;
     }
 

@@ -27,3 +27,29 @@ function closeOverlay() {
 document.querySelectorAll('.enlargeable').forEach((img) => {
     img.addEventListener('click', () => openOverlay(img.src));
 });
+
+// Function to check if the device is mobile
+function isMobileDevice() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+// Add event listeners to the video elements
+document.querySelectorAll('.project video').forEach((video) => {
+    if (isMobileDevice()) {
+        // Mobile: Pause videos by default, play on click
+        video.pause(); // Ensure videos are paused initially
+        video.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    } else {
+        // Desktop: Autoplay and loop
+        video.play();
+        video.setAttribute('loop', true);
+        video.setAttribute('autoplay', true);
+        video.setAttribute('muted', true);
+    }
+});
