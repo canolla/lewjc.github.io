@@ -535,6 +535,16 @@ video {
         margin-block: 3rem;
     }
     
+    .mobile-instructions {
+        display: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-instructions p {
+        text-align: center;
+    }
     
 
 
@@ -624,6 +634,15 @@ video {
 
     .pagination {
         width: 85vw;
+    }
+
+    .mobile-instructions {
+        display: flex;
+        align-items: center;
+    }
+
+    .project video {
+        width: 100%;
     }
 
 }
