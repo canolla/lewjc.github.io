@@ -45,6 +45,13 @@ document.querySelectorAll('.project video').forEach((video) => {
                 video.pause();
             }
         });
+        video.addEventListener('touchstart', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
     } else {
         // Desktop: Autoplay and loop
         video.play();
