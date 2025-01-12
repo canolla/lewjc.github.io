@@ -38,6 +38,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    margin-inline: auto;
 }
 
 
@@ -634,6 +635,7 @@ video {
 
     .pagination {
         width: 85vw;
+        margin-inline: auto;
     }
 
     .mobile-instructions {
@@ -642,6 +644,10 @@ video {
     }
 
     .project video {
+        width: 100%;
+    }
+
+    .section {
         width: 100%;
     }
 
