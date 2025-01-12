@@ -298,9 +298,15 @@
         <img class="enlargeable" src="/img/trailranger/Report-Layout5.jpg" alt="">
     </div>
 
-        <embed src="/img/trailranger/trailranger-report-spereads.pdf" width="800" height="600" type="application/pdf">
+        <embed src="/img/trailranger/trailranger-report-spereads.pdf" width="800" height="600" type="application/pdf" class="pdf-embed">
 
-        
+        <style>
+            @media (max-width: 768px) {
+            .pdf-embed {
+                display: none;
+            }
+            }
+        </style>
     </div>
 
     <div class="pagination">
