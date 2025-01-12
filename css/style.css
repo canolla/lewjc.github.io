@@ -651,4 +651,8 @@ video {
         width: 100%;
     }
 
+    .enlargeable {
+        width: 200%;
+    }
+
 }
