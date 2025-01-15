@@ -546,6 +546,18 @@ video {
     .mobile-instructions p {
         text-align: center;
     }
+
+    .coming-soon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 10rem;
+        width: 800px;
+    }
+
+    .coming-soon h1 {
+        font-weight: 400;
+    }
     
 
 
